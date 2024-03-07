@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papudim</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Home -->
+    <header class="max-width bg" id="home">
+      <div class="container">
+        <div class="menu">
+          <div class="logo"></div>
+          <div class="desktop-menu">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">Sobre Nós</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Serviços</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="call">
+          <div class="left">
+            <img id="pudim" src="../front-end/img/pudim-2.png" alt="pudins" />
+          </div>
+          <div class="right">
+            <h1 class="color-laranja text-gd">Papudim</h1>
+            <h2 class="color-cinza2 text-nd">
+              Explorando o mundo do pudim, uma colherada de doçura de cada vez!
+            </h2>
+            <p class="text-pq">"Texto descrição"</p>
+            <button>Ver Menu</button>
+          </div>
+        </div>
+      </div>
+      <button id="back-to-top">^</button>
+    </header>
+
+    <!-- About -->
+
+    <section class="max-width bg" id="about">
+      <div class="container">
+        <div class="call">
+          <div class="left">
+            <span class="text-title color-laranja">Sobre Nós</span>
+            <h2 class="text nd color-cinza">Adicionar Texto</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
+              architecto, obcaecati harum dolore, nemo recusandae placeat iste
+              neque nam repellat consequuntur maxime, minima ut. Maiores ipsum
+              eius voluptates. Libero, at.
+            </p>
+            <button>Saiba Mais</button>
+          </div>
+          <div class="right"></div>
+          <img id="pudim2" src="../front-end/img/pudim-1.png" alt="pudim" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Service -->
+
+    <section class="max-width bg" id="service">
+      <div class="container">
+        <div class="content">
+          <div class="titulo">
+            <span class="text-title color-laranja">Ofertas</span>
+            <h2 class="text nd color-cinza">Nossos Serviços</h2>
+          </div>
+          <div class="down">
+            <div class="box">
+              <i class="fa fa-cutlery text-gd color-laranja"></i>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-hockey-puck text-gd color-laranja"></i>
+            </div>
+            <div class="box">
+              <i class="fa fa-motorcycle text-gd color-laranja"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var btn = document.querySelector("#back-to-top");
+      btn.addEventListener("click", function () {
+        window.scrollTo(0, 0);
+      });
+    </script>
+  </body>
+</html>
